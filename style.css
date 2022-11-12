@@ -67,6 +67,8 @@ padding: 25px;
 
 }
 h1{
+    user-select: none;
+    cursor: pointer;
     color: var(--White);
     font-family: 'Outfit', sans-serif;
     font-weight: 400;
@@ -142,6 +144,8 @@ hr{
     color: var(--Cyan);
     font-family: 'Outfit', sans-serif;
     font-weight: 300;
+    cursor: pointer;
+    user-select: none;
 }
 /* effect of card image */
 .effect{
