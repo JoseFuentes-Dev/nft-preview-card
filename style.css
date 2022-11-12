@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+/* font-family: 'Outfit', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* all const variables  */
+:root{
+    --Soft-blue: hsl(215, 51%, 70%); /*paragraph color*/
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-background: hsl(217, 54%, 11%); /*background-color*/
+    --Very-dark-blue-main: hsl(216, 50%, 16%); /*background main-card*/
+    --Very-dark-blue-line: hsl(215, 32%, 27%); /*line color*/
+    --White: hsl(0, 0%, 100%); /*h1 color*/ 
+}
+body{
+    background-color: var(--Very-dark-blue-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+/* main details20.5 */
+.main-nft-card{
+background-color: var(--Very-dark-blue-main);
+height: 33.875rem;
+width: 20.5rem;
+border-radius: 20px;
+padding: 25px;
+}
+/* images details */
+.images{
+    position: relative;
+    width: 278px;
+    height: 278px;
+    display: flex;
+}
+.nft-image{
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+}
+#view-ico{
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  
+}
+#view-icon{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+   
+}
+/* details of card */
+.details{
+ padding-top: 22px;
+
+}
+h1{
+    color: var(--White);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+/* a general properties to p tag */
+p{
+    padding-top: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: var(--Soft-blue);
+    line-height: 25px ;
+}
+/* contain details after h1 tag */
+.contain-details{
+    padding-top: 22px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+}
+.eth{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.clock{
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.value-eth{
+    color: var(--Cyan);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: .9rem;
+}
+.icon-clock{
+    color: var(--Cyan);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: .9rem;
+}
+/* hr position relative  */
+hr{
+    position: relative;
+    margin-top: 5px;
+    color: var(--Very-dark-blue-line);
+    opacity: .1;
+}
+/* creator of nft card details  */
+.creator{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+.image-avatar{
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+.details-end{
+    margin-top: 10px;
+}
+.creator-name{
+    color: var(--Cyan);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+/* effect of card image */
+.effect{
+    opacity: 0;
+}
+/* when images hover efect  */
+:has(> .images :hover) .effect {
+    opacity: 1;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
