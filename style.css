@@ -35,7 +35,6 @@ padding: 25px;
     position: relative;
     width: 278px;
     height: 278px;
-    display: flex;
 }
 .nft-image{
     position: absolute;
@@ -63,7 +62,7 @@ padding: 25px;
 }
 /* details of card */
 .details{
- padding-top: 22px;
+padding-top: 22px;
 
 }
 h1{
@@ -89,7 +88,7 @@ p{
     padding-bottom: 10px;
     display: flex;
     flex-direction: row;
-    position: relative;
+    justify-content: space-between;
 
 }
 .eth{
@@ -98,8 +97,6 @@ p{
     gap: 10px;
 }
 .clock{
-    position: absolute;
-    right: 0;
     display: flex;
     flex-direction: row;
     gap: 10px;
